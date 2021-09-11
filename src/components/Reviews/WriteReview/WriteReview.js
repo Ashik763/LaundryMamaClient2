@@ -23,7 +23,7 @@ const WriteReview = () => {
     // data2 = {data2,...data}
     // console.log(data2);
     // const data3 = {...data,...data2}
-    fetch('http://localhost:5000/addReview',{
+    fetch('https://peaceful-meadow-02567.herokuapp.com/addReview',{
       method: 'POST',
       body: formData
     })

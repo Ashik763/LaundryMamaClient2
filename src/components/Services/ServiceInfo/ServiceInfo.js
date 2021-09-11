@@ -26,7 +26,7 @@ const ServiceInfo = (props) => {
     // let data2 =data.img;
     console.log(formData.getAll('file'));
     // console.log(service);
-    fetch(`http://localhost:5000/OrderService/${id}`,{
+    fetch(`https://peaceful-meadow-02567.herokuapp.com/OrderService/${id}`,{
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body:formData

@@ -15,7 +15,7 @@ const Services = (e) => {
 
     console.log(service);
     useEffect(() => {
-        fetch('http://localhost:5000/showService')
+        fetch('https://peaceful-meadow-02567.herokuapp.com/showService')
         .then(res => res.json())
         .then(data =>{
             

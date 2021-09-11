@@ -21,7 +21,7 @@ const Dashboard = (props) => {
 
     // }
 
-    fetch(`http://localhost:5000/userInfo/${loggedInUser.email}`)
+    fetch(`https://peaceful-meadow-02567.herokuapp.com/userInfo/${loggedInUser.email}`)
       .then((res) => res.json())
       .then((data) => {
         //   setServiceDetail(data);

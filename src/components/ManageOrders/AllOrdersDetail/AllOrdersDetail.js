@@ -11,7 +11,7 @@ const AllOrdersDetail = ({allOrders}) => {
         allOrders.state = data.state; 
         setState(data.state);
         // console.log(allOrders);
-        fetch('http://localhost:5000/orderWithState',{
+        fetch('https://peaceful-meadow-02567.herokuapp.com/orderWithState',{
             method:'PATCH',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(allOrders)
@@ -23,7 +23,7 @@ const AllOrdersDetail = ({allOrders}) => {
 
     const handleDelete = () => {
         console.log('deleted');
-        fetch(`http://localhost:5000/deleteOrder/${allOrders._id}`,{
+        fetch(`https://peaceful-meadow-02567.herokuapp.com/deleteOrder/${allOrders._id}`,{
             method:'DELETE'
             // headers:{'content-type': 'application/json'},
             // body:JSON.stringify(allOrders)

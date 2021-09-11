@@ -12,7 +12,7 @@ const Reviews = () => {
   // console.log(review);
 
   useEffect(() => {
-    fetch('http://localhost:5000/showReview')
+    fetch('https://peaceful-meadow-02567.herokuapp.com/showReview')
     .then(res => res.json())
     .then(data =>{
       console.log(data);

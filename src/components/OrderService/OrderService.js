@@ -6,7 +6,7 @@ const OrderService = () => {
     const {id} = useParams();
     const [serviceDetail,setServiceDetail] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/OrderService/${id}`)
+        fetch(`https://peaceful-meadow-02567.herokuapp.com/OrderService/${id}`)
         .then(res => res.json())
         .then((data) => {
           setServiceDetail(data);

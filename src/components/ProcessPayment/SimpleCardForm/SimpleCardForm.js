@@ -40,7 +40,7 @@ const SimpleCardForm = ({userInfo,serviceName,servicePrice,serviceDescription}) 
       // alert('successfully paid!')
       const phone=sendUserInfo.phone;
       // console.log(email);
-      fetch(`http://localhost:5000/userInfo`,{
+      fetch(`https://peaceful-meadow-02567.herokuapp.com/userInfo`,{
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(sendUserInfo)

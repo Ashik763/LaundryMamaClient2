@@ -9,7 +9,7 @@ import './AddService.css'
 const AddService = () => {
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
   const [admin,setAdmin] = useState(false);
-  fetch(`http://localhost:5000/checkAdmin/${loggedInUser?.email}`)
+  fetch(`https://peaceful-meadow-02567.herokuapp.com/checkAdmin/${loggedInUser?.email}`)
     .then(res => res.json())
     .then(data => {
    
@@ -27,7 +27,7 @@ const AddService = () => {
      
       console.log(formData);
      
-      fetch('http://localhost:5000/addService',{
+      fetch('https://peaceful-meadow-02567.herokuapp.com/addService',{
         method: 'POST',
         body: formData
       })
