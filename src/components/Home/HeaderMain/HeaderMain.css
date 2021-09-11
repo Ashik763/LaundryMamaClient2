@@ -1,0 +1,59 @@
+#line2 {
+    animation-name: line2;
+    animation-duration: 10s;
+    animation-iteration-count: 100;
+}
+
+@keyframes line2 {
+    0% {font-size:50px; color:red; opacity:0.1}
+    25%  { font-size:30px; top:0px;}
+    50%  { font-size:50px; top:0px;}
+    100% { font-size:30px; color:yellow; opacity:1;}
+  }
+  @include media-breakpoint-up() { 
+      .container img{
+          max-width:100%;
+          height:50px;
+
+      }
+
+
+
+   }
+
+   @media (max-width:700px){
+    *{
+        box-sizing: border-box;
+    }
+    .header-container{
+        display:flex;
+        flex-direction:row;
+    }
+   
+    .header1{
+        
+        /* position: relative; */
+        left: -50px;
+        
+    }
+    .headerPic{
+        
+        position: relative;
+        left: -50px;
+        width: 50px;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
